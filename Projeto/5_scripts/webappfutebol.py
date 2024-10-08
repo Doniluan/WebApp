@@ -11,7 +11,7 @@ st.write(
 st.sidebar.header('Escolha os times')
 
 def get_data():
-    path = '../2_bases_tratadas/futebol2.csv'
+    path = './Projeto/2_Bases_Tratadas/futebol2.csv'
     return pd.read_csv(path, sep=';')
 
 df = get_data()
