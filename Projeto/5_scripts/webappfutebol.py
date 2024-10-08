@@ -3,6 +3,8 @@ import pandas as pd
 from datetime import datetime
 import os
 
+
+
 st.write(
     """
     **Futebol Web App**
@@ -16,7 +18,9 @@ def get_data():
     base_path = r'C:\Users\luan_\Documents\LU\CURSOS\Web Data Applications\WebApp\Projeto\2_Bases_Tratadas'
     file_name = 'futebol2.csv'
     path = os.path.join(base_path, file_name)
-    return pd.read_csv(path, sep=';')
+
+    st.write(f"Usando o caminho: {path}")  # Adicione esta linha para ver o caminho
+    ...
 
 # Carregar os dados
 df = get_data()
