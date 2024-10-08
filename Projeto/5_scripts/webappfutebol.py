@@ -12,7 +12,7 @@ st.sidebar.header('Escolha os times')
 
 # Função para carregar os dados
 def get_data():
-    path = '../2_bases_tratadas/futebol2.csv'
+    path = 'C:\\Users\\luan_\\Documents\\LU\\CURSOS\\Web Data Applications\\WebApp\\Projeto\\2_Bases_Tratadas\\futebol2.csv'
     return pd.read_csv(path, sep=';')
 
 # Carregar os dados
